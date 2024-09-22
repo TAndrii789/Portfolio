@@ -8,7 +8,7 @@ export default defineConfig({
     react(), // Handles both .jsx and .tsx files
     createHtmlPlugin(), // For HTML handling
   ],
-  base: '/',
+  base: 'index.html',
   publicDir: 'public',
   server: {  
     watch: {
