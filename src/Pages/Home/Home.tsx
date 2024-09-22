@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { ReactSvg } from "../../assets/ReactSvg";
-import "./Home.scss";
+import "./Home.css";
 import photo from "../../assets/img/1.jpg";
 import linkedin from "../../assets/svg/linkedin.svg";
 import github from "../../assets/svg/github.svg";

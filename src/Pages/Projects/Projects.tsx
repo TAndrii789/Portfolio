@@ -2,7 +2,7 @@ import cryptoPhoto from "../../assets/img/crypto.png";
 import numpazPhoto from "../../assets/img/numpaz.png";
 import pairPhoto from "../../assets/img/pair.png";
 import github from "../../assets/originSvg/originGithub.svg";
-import "./Projects.scss";
+import "./Projects.css";
 
 export const Projects = () => {
 	return (
