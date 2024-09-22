@@ -30,7 +30,7 @@ export const Projects = () => {
 							>
 								<img className="github" src={github} alt="" />
 							</a>
-							<button><a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">Try It</a></button>
+							<button><a href="https://tandrii789.github.io/Portfolio/CryptoCurrency" target="_blank" rel="noopener noreferrer">Try It</a></button>
 						</span>
 					</div>
 				</div>
@@ -50,7 +50,7 @@ export const Projects = () => {
 							>
 								<img className="github" src={github}/>
 							</a>
-							<button><a href="public\Numpuz\index.html" target="_blank" rel="noopener noreferrer">Try It</a></button>
+							<button><a href="https://tandrii789.github.io/numpuz" target="_blank" rel="noopener noreferrer">Try It</a></button>
 						</span>
 					</div>
 					<img src={numpazPhoto} className="numpazPhoto sample2" />
@@ -72,7 +72,7 @@ export const Projects = () => {
 							>
 								<img className="github" src={github} alt="" />
 							</a>
-							<button><a href="" target="_blank" rel="noopener noreferrer">Try It</a></button>
+							<button><a href="https://tandrii789.github.io/find-a-pair" target="_blank" rel="noopener noreferrer">Try It</a></button>
 						</span>
 					</div>
 				</div>
