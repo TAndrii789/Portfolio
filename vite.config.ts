@@ -13,5 +13,4 @@ export default defineConfig({
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'], // Ensure Vite resolves both JS and TS extensions
   },
-  assetsInclude: ['**/*.html'], // Handles HTML assets
 })
