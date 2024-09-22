@@ -1,0 +1,159 @@
+.projects-root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(228, 231, 237);
+}
+.projects-root hr {
+  margin: 10vh 0 0 0;
+  width: 50vw;
+  height: 1px;
+  background-color: #adadad;
+  border: 0;
+}
+.projects-root .projects {
+  padding: 10vh 0;
+}
+.projects-root .projects h2 {
+  padding-left: 10vh;
+}
+.projects-root .projects .crypto,
+.projects-root .projects .numpaz,
+.projects-root .projects .pair {
+  display: flex;
+  padding: 10vh;
+}
+.projects-root .projects .crypto .sample1, .projects-root .projects .crypto .sample3,
+.projects-root .projects .numpaz .sample1,
+.projects-root .projects .numpaz .sample3,
+.projects-root .projects .pair .sample1,
+.projects-root .projects .pair .sample3 {
+  display: inline-block;
+  text-align: right;
+}
+.projects-root .projects .crypto .sample2,
+.projects-root .projects .numpaz .sample2,
+.projects-root .projects .pair .sample2 {
+  text-align: left;
+}
+.projects-root .projects .crypto .github,
+.projects-root .projects .numpaz .github,
+.projects-root .projects .pair .github {
+  width: 2em;
+  padding-right: 7vh;
+}
+.projects-root .projects .crypto .text1,
+.projects-root .projects .numpaz .text1,
+.projects-root .projects .pair .text1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5vh;
+}
+.projects-root .projects .crypto .text1 h3,
+.projects-root .projects .numpaz .text1 h3,
+.projects-root .projects .pair .text1 h3 {
+  font-size: 20px;
+}
+.projects-root .projects .crypto .text1 h4,
+.projects-root .projects .numpaz .text1 h4,
+.projects-root .projects .pair .text1 h4 {
+  background-color: rgb(3, 48, 94);
+  width: 20vw;
+  margin: 2.5vh 0;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1vh 2vh;
+  box-shadow: 3px 4px 3px 1px rgb(1, 18, 36);
+}
+.projects-root .projects .crypto .text1 span,
+.projects-root .projects .numpaz .text1 span,
+.projects-root .projects .pair .text1 span {
+  display: flex;
+  justify-content: end;
+}
+.projects-root .projects .crypto .text2,
+.projects-root .projects .numpaz .text2,
+.projects-root .projects .pair .text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 5vh;
+}
+.projects-root .projects .crypto .text2 h3,
+.projects-root .projects .numpaz .text2 h3,
+.projects-root .projects .pair .text2 h3 {
+  font-size: 20px;
+}
+.projects-root .projects .crypto .text2 h4,
+.projects-root .projects .numpaz .text2 h4,
+.projects-root .projects .pair .text2 h4 {
+  background-color: rgb(3, 48, 94);
+  width: 20vw;
+  margin: 2.5vh 0;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1vh 2vh;
+  box-shadow: -3px 4px 3px 1px rgb(1, 18, 36);
+}
+.projects-root .projects .crypto .text2 span,
+.projects-root .projects .numpaz .text2 span,
+.projects-root .projects .pair .text2 span {
+  display: flex;
+  justify-content: start;
+}
+.projects-root .projects .crypto .text3,
+.projects-root .projects .numpaz .text3,
+.projects-root .projects .pair .text3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5vh;
+}
+.projects-root .projects .crypto .text3 h3,
+.projects-root .projects .numpaz .text3 h3,
+.projects-root .projects .pair .text3 h3 {
+  font-size: 20px;
+}
+.projects-root .projects .crypto .text3 h4,
+.projects-root .projects .numpaz .text3 h4,
+.projects-root .projects .pair .text3 h4 {
+  background-color: rgb(3, 48, 94);
+  width: 20vw;
+  margin: 2.5vh 0;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1vh 2vh;
+  box-shadow: 3px 4px 3px 1px rgb(1, 18, 36);
+}
+.projects-root .projects .crypto .text3 span,
+.projects-root .projects .numpaz .text3 span,
+.projects-root .projects .pair .text3 span {
+  display: flex;
+  justify-content: end;
+}
+.projects-root .projects .crypto button,
+.projects-root .projects .numpaz button,
+.projects-root .projects .pair button {
+  background-color: transparent;
+  border: #adadad 2px solid;
+  font-size: 1em;
+  border-radius: 0.3em;
+  color: rgb(228, 231, 237);
+  padding: 0.3em 0.7em;
+  margin-left: 17px;
+}
+.projects-root .projects .crypto img,
+.projects-root .projects .numpaz img,
+.projects-root .projects .pair img {
+  max-width: 30vw;
+  max-height: 100%;
+  min-height: 100%;
+  padding-right: 10vh;
+}
+.projects-root .projects .crypto .numpazPhoto,
+.projects-root .projects .numpaz .numpazPhoto,
+.projects-root .projects .pair .numpazPhoto {
+  padding-right: 0;
+  padding-left: 10vh;
+}

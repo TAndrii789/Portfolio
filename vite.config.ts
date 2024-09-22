@@ -10,11 +10,11 @@ export default defineConfig({
   ],
   // base: 'Portfolio',
   publicDir: 'public',
-  server: {  
-    watch: {
-      usePolling: true,
-    }
-},
+//   server: {  
+//     watch: {
+//       usePolling: true,
+//     }
+// },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'], // Ensure Vite resolves both JS and TS extensions
   },
