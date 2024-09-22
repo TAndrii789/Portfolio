@@ -5,16 +5,11 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(), // Handles both .jsx and .tsx files
-    createHtmlPlugin(), // For HTML handling
+    react(), 
+    createHtmlPlugin(), 
   ],
-  // base: 'Portfolio',
+  base: '/Portfolio/',
   publicDir: 'public',
-//   server: {  
-//     watch: {
-//       usePolling: true,
-//     }
-// },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'], // Ensure Vite resolves both JS and TS extensions
   },
