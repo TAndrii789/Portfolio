@@ -6,9 +6,10 @@
 	"homepage": "https://tandrii789.github.io/Portfolio",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build && npm run build:crypto",
-		"build:crypto": "cd src/CryptoCurrency && npm install && npm run build && npm run copy:crypto",
-		"copy:crypto": "cp -r src/CryptoCurrency/dist/* public/CryptoCurrency/",
+		"build": "vite build && npm run build",
+		// :crypto",
+		// "build:crypto": "cd src/CryptoCurrency && npm install && npm run build && npm run copy:crypto",
+		// "copy:crypto": "cp -r src/CryptoCurrency/dist/* public/CryptoCurrency/",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview"
 	},
