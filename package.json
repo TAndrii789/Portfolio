@@ -6,11 +6,12 @@
 	"homepage": "https://tandrii789.github.io/Portfolio",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build && npm run build:crypto",
+		"build": "vite build",
 		"build:crypto": "cd src/CryptoCurrency && npm install && npm run build && npm run copy:crypto",
 		"copy:crypto": "cp -r src/CryptoCurrency/dist/* public/CryptoCurrency/",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"check-node-version": "^4.2.1",
@@ -28,6 +29,7 @@
 		"eslint": "^8.57.0",
 		"eslint-plugin-react-hooks": "^4.6.2",
 		"eslint-plugin-react-refresh": "^0.4.7",
+		"gh-pages": "^6.1.1",
 		"sass": "^1.77.6",
 		"typescript": "^5.2.2",
 		"vite": "^5.4.7",
