@@ -30,11 +30,14 @@ export const Projects = () => {
 							>
 								<img className="github" src={github} alt="" />
 							</a>
-							<button><a href="dist\CryptoCurrency\index.html" target="_blank" rel="noopener noreferrer">Try It</a></button>
+							<button><a href="\CryptoCurrency\index.html" target="_blank" rel="noopener noreferrer">Try It</a></button>
 							{/* https://tandrii789.github.io/Portfolio/CryptoCurrency */}
 						</span>
 					</div>
 				</div>
+				
+
+
 				
 				<div className="numpaz">
 					<div className="text2 sample2">
@@ -51,7 +54,7 @@ export const Projects = () => {
 							>
 								<img className="github" src={github}/>
 							</a>
-							<button><a href="dist\Numpuz\index.html" target="_blank" rel="noopener noreferrer">Try It</a></button>
+							<button><a href="\Numpuz\index.html" target="_blank" rel="noopener noreferrer">Try It</a></button>
 						</span>
 					</div>
 					<img src={numpazPhoto} className="numpazPhoto sample2" />
