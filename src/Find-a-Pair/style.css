@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Lemon';
-  src: url('fonts/Lemon-Regular.ttf') format('truetype');
+  src: url('assets/fonts/Lemon-Regular.ttf') format('truetype');
 }
 body{
   display: flex;

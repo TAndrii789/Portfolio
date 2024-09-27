@@ -175,6 +175,10 @@ body {
   padding: 5px;
   border-radius: 8px;
 }
+.nav-bar .inside-nav .navigation button .download-btn {
+  text-decoration: none;
+  color: #16F529;
+}
 
 .start-animation {
   display: flex;

@@ -9,6 +9,9 @@ export default defineConfig({
     // createHtmlPlugin(), 
   ],
   base: "/Portfolio/",
+  build: {
+    outDir: 'dist', // Check that this path is correct
+  },
   // publicDir: 'public',
   // resolve: {
   //   extensions: ['.js', '.jsx', '.ts', '.tsx'], // Ensure Vite resolves both JS and TS extensions

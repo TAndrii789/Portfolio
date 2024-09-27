@@ -177,6 +177,10 @@ body {
 				font-size: 1em;
 				padding: 5px;
 				border-radius: 8px;
+				.download-btn{
+					text-decoration: none;
+					color: $neon-color
+				}
 			}
 			
 		}

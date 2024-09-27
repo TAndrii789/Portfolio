@@ -66,7 +66,7 @@ function fillFruits(){
   for (let i = 0; i < imagesArray.length; i++) {
     let div = document.createElement('div');
     let img = document.createElement('img');
-    img.src = `icons/${imagesArray[i]}`;
+    img.src = `assets/icons/${imagesArray[i]}`;
     img.classList.add("animate-Open")
     div.setAttribute("class", "grid-item");
     wrapper.setAttribute("style", "pointer-events: none;")  

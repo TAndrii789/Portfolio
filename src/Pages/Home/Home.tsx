@@ -5,6 +5,7 @@ import photo from "../../assets/img/1.jpg";
 import linkedin from "../../assets/svg/linkedin.svg";
 import github from "../../assets/svg/github.svg";
 import { Projects } from "../Projects/Projects";
+import CV from "../../assets/CV.pdf"
 
 export const Home = () => {
 	const htmlContent = (
@@ -60,7 +61,7 @@ export const Home = () => {
 						<p className="about-me">About Me</p>
 						<p className="projects-nav">Projects</p>
 						<p className="contact">Contact</p>
-						<button>Resume</button>
+						<button><a href={CV} download className="download-btn">Resume</a></button>
 					</div>
 				</div>
 			</div>
