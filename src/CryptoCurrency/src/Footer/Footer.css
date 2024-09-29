@@ -1,0 +1,18 @@
+.copyright {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	height: 10vh;
+	background-color: hsl(198, 100%, 45%);
+}
+
+.copyright-links {
+	text-decoration: none;
+	color: white;
+}
+
+.copyright-links:hover {
+	color: rgb(0, 43, 107);
+	transition: color 0.3s ease-in-out;
+}

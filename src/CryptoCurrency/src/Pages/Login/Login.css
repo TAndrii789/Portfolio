@@ -1,0 +1,102 @@
+.loginPage {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsla(198, 100%, 46%, 0.03);
+}
+
+.form-container {
+	height: 60vh;
+	width: 60vw;
+	box-shadow: 3px 3px 15px hsla(0, 0%, 21%, 0.411);
+	display: flex;
+}
+
+.loginForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+}
+
+.emailInput,
+.passwordInput {
+	margin: 2vh;
+}
+.loginForm h1 {
+	color: hsl(198, 100%, 45%);
+	font-size: 4.5vh;
+	margin: 2vh;
+}
+
+.emailInput,
+.passwordInput {
+	font-size: 1em;
+	padding: 0 5px;
+	height: 2.5em;
+	border-radius: 50px;
+}
+
+.submitLink {
+	display: flex;
+	text-decoration: none;
+	cursor: auto;
+}
+
+.submitBtn {
+	font-size: 1em;
+	padding: 0 5px;
+	margin: 0.5em 1em;
+	background-color: rgb(0, 161, 230);
+	color: #fff;
+	border: 2px solid rgba(0, 77, 230, 0.422);
+	border-radius: 50px;
+	box-shadow: 1px 1px 5px hsla(0, 0%, 21%, 0.411);
+	cursor: pointer;
+}
+
+.addition {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* background-color: rgba(1, 160, 228, 0.617); */
+	background: hsl(198, 99%, 45%);
+	background: linear-gradient(
+		130deg,
+		rgba(1, 160, 228, 0.62) 0%,
+		rgba(0, 232, 255, 0.4066001400560224) 100%
+	);
+	color: #fff;
+	text-align: center;
+}
+
+.loginForm .submitBtn {
+	margin: 2vh;
+	height: 3em;
+	width: 10em;
+}
+
+.submitLink {
+	margin: 1vh;
+}
+
+.addition > * {
+	margin: 1vh;
+}
+
+.addition h1 {
+	margin-bottom: 3vh;
+}
+
+.logo {
+	margin-bottom: 3vh;
+	width: 25vw;
+}

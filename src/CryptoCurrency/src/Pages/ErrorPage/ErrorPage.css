@@ -1,0 +1,27 @@
+.error-page-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../../assets/ErrorPage.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsla(198, 98%, 50%, 0.697);
+  color: #000;
+}
+
+.error-page-container h2{
+  font-size: 12vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 2vh;
+  letter-spacing: .3vw;
+}
+
+.error-page-container p{
+  font-weight: bold;
+  font-size: 3vh;
+  margin-bottom: 1vh;
+  letter-spacing: .1vw;
+}

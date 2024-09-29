@@ -1,0 +1,52 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#root {
+	height: 100%;
+}
+
+.header-aboutCoin {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	background-color: hsl(198, 100%, 45%);
+	color: #fff;
+	padding: 1vh 0;
+	font-size: 1.5em;
+	user-select: none;
+}
+
+.header-aboutCoin .currentDate {
+	color: hsl(240, 3%, 7%);
+	font-size: 2.2rem;
+}
+
+.header-aboutCoin .coin-name {
+	font-size: 2.3em;
+}
+
+.header-aboutCoin .coin-description {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-aboutCoin .coin-description span {
+	margin-top: 0.7em;
+	color: hsl(0, 10%, 14%);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+}
+.header-aboutCoin .coin-description span svg {
+	margin-left: 0.1em;
+}
+#chartCoin {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	margin-left: 20%;
+  flex: 1;
+}

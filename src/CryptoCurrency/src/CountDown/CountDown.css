@@ -1,0 +1,38 @@
+@font-face {
+	font-family: Venture13;
+	src: url("/src/assets/fonts/Kanit-Medium.ttf") format("opentype");
+}
+
+.countdown-main-box {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.countdown-box {
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 400;
+	border: 1px solid hsl(198, 100%, 45%);
+	user-select: none;
+}
+
+.text {
+	margin: 12px 5px;
+}
+
+.countdown {
+	font-family: Venture13;
+	color: rgb(0, 38, 255);
+}
+
+.days-box {
+	font-size: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.days {
+	margin: 0px 7px;
+}
