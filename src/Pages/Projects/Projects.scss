@@ -104,12 +104,17 @@ $font-color: rgb(228, 231, 237);
 			
 			button {
 				background-color: transparent;
-				border: #adadad 2px solid;
+				border: #adadad 3px solid;
 				font-size: 1em;
 				border-radius: 0.3em;
 				color: $font-color;
 				padding: 0.3em 0.7em;
 				margin-left: 17px;
+				a{
+					text-decoration: none;
+					color: $font-color;
+					font-weight: 600;
+				}
 			}
 			img {
 				max-width: 30vw;

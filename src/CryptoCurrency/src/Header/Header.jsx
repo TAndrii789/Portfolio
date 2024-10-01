@@ -1,6 +1,6 @@
 import logoImg from "/src/assets/logo.png";
 import mgGlass from "/src/assets/mgGlass.png";
-import Star from "/src/assets/Star.jsx";
+import Star from "../assets/Star";
 import "./Header.css";
 import { useRef, useState } from "react";
 

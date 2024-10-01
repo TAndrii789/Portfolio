@@ -7,7 +7,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	height: 100vh;
-	background-image: url('public/Numpuz/assets/brickBG-DoQjudkw.jpg');
+	background-image: url('./brickBG-DoQjudkw.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -15,7 +15,7 @@ body {
 	color: #fffc;
 }
 .wrapper {
-	background-image: url('./assets/woodBG.jpg');
+	background-image: url('./woodBG.jpg');
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	width: 50vw;
@@ -105,7 +105,7 @@ body {
 	color: #ed7635;
 }
 .grid-item {
-	background-image: url('./assets/divBG-BjUJftMR.jpg');
+	background-image: url('./divBG-BjUJftMR.jpg');
 	background-position: center;
 	display: flex;
 	align-items: center;

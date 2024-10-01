@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./DataFetching.css";
 import "../Preloader/Preloader.css";
 import Prelaoder from "../Preloader/Preloader.jsx";
-import star from "/src/assets/star.png";
+import star from "../assets/star.png";
 import { DataFromChildContext } from "../Pages/Home.jsx";
 
 function DataFetching() {

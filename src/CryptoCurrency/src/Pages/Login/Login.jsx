@@ -1,5 +1,5 @@
 import "./Login.css";
-import logoImg from "/src/assets/logo.png";
+import logoImg from "../../assets/logo.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 

@@ -136,12 +136,19 @@
 .projects-root .projects .numpaz button,
 .projects-root .projects .pair button {
   background-color: transparent;
-  border: #adadad 2px solid;
+  border: #adadad 3px solid;
   font-size: 1em;
   border-radius: 0.3em;
   color: rgb(228, 231, 237);
   padding: 0.3em 0.7em;
   margin-left: 17px;
+}
+.projects-root .projects .crypto button a,
+.projects-root .projects .numpaz button a,
+.projects-root .projects .pair button a {
+  text-decoration: none;
+  color: rgb(228, 231, 237);
+  font-weight: 600;
 }
 .projects-root .projects .crypto img,
 .projects-root .projects .numpaz img,
