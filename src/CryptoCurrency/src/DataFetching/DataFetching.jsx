@@ -184,7 +184,7 @@ function DataFetching() {
 				<Link
 					key={index}
 					className="currency-element"
-					to={`/${coin.name}`}
+					to={`/Portfolio/CryptoCurrency/index.html/${coin.name}`}
 					style={linkStyle}
 					state={data}
 				>

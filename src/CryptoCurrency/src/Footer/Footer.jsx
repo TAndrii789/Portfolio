@@ -10,11 +10,11 @@ function Footer() {
 			<p>&copy; cryptoCurrency</p>
 			<Link
 				className="copyright-links"
-				to="https://tandrii789.github.io/MyPortfolio/"
+				to="https://tandrii789.github.io/Portfolio/"
 			>
 				Portfolio
 			</Link>
-			<Link className="copyright-links" to="/">Contact</Link>
+			<Link className="copyright-links" to="/Portfolio/CryptoCurrency/index.html/home">Contact</Link>
 			<p>{year}</p>
 		</span>
 	);

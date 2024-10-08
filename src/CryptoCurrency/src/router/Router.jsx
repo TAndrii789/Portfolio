@@ -8,7 +8,7 @@ import Login from "../Pages/Login/Login";
 
 export const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/Portfolio/CryptoCurrency/index.html",
 		element: <Layout />,
 		errorElement: <NotFound />,
 		children: [
@@ -17,11 +17,11 @@ export const router = createBrowserRouter([
 				element: <Login />,
 			},
 			{
-				path: "/home",
+				path: "home",
 				element: <Home />,
 			},
 			{
-				path: "/:id",
+				path: ":id",
 				element: <AboutCoin />,
 			},
 		],

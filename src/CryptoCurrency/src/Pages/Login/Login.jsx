@@ -65,7 +65,7 @@ const LoginFormComponent = ({
 			</button>
 		</form>
 		<span className="addition">
-			<img className="logo" src={logoImg} alt="Logo" />
+			<img className="logo" src={logoImg} alt="logo" />
 			<h1>Welcome to login</h1>
 			<p>Want to {signUp ? "Sign In" : "Sign Up"}?</p>
 			<button
@@ -105,7 +105,7 @@ function Login() {
 				setInfo("Passwords don't match");
 				return;
 			}else{
-				navigate("/home");
+				navigate("home");
 			}
 		}else{
 			if (!validateEmail(email)) {
@@ -115,7 +115,7 @@ function Login() {
 				setInfo("Password must have at least 8 characters");
 				return;
 			}else{
-				navigate("/home");
+				navigate("home");
 			}
 		}
 

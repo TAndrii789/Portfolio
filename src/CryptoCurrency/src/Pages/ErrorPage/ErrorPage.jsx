@@ -23,7 +23,7 @@ return (
     <div className="error-page-container">
       <h2>Oops!</h2>
       <p>We&apos;re sorry, The page you requested could not be found.</p>
-      <Link to={'/'} style={linkStyle}>Go to Home<FaBtc size={20} /></Link>
+      <Link to={"/Portfolio/CryptoCurrency/index.html/home"} style={linkStyle}>Go to Home<FaBtc size={20} /></Link>
     </div>
   </>
 )
