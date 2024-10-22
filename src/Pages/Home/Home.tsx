@@ -68,7 +68,6 @@ export const Home = () => {
 			popUps = popUps.filter(item => item !== "copy-anim");
 			
 			if (popupAmount>10) popupAmount-=count * 65
-			console.log(popUps, popupAmount);
 		}
 	};
 
@@ -89,7 +88,6 @@ export const Home = () => {
 			}
 			popupAmount = 10
 			addToPopupAmount()
-			console.log(popupAmount, popUps);
 
 			copyEl.addEventListener("animationend", handleRemoveCopyPopup);
 			return () => {
@@ -106,7 +104,6 @@ export const Home = () => {
 			const count = popUps.filter(item => item === "send-anim").length;
 			popUps = popUps.filter(item => item !== "send-anim");
 			if (popupAmount>10) popupAmount-=count*65
-			console.log(popUps, popupAmount);
 		}
 	};
 
@@ -117,13 +114,11 @@ export const Home = () => {
 			const sendAnim: Element | null = document.getElementById("send-anim");
 			if (sendAnim) popUps.push(sendAnim.id);
 
-
 			if(popupAmount>10){
 				(sendAnim as HTMLElement).style.bottom = `75px`;
 			} 
 			popupAmount = 10
 			addToPopupAmount();
-			console.log(popupAmount, popUps);
 
 			sendEl?.addEventListener("animationend", handleRemoveSendPopup);
 			return () => {
