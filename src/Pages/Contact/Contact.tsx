@@ -12,36 +12,20 @@ export const Contact: React.FC<ComponentAProps> = ({ onClick }) =>  {
 		e.preventDefault();
 
 		emailjs
-			// .sendForm("service_bvqgwuy", "template_tk3r0i1", form.current, {
-			// 	publicKey: "Xibf18pA3r3xUWwtY",
-			// })
-			// .then(
-			// 	() => {
-			// 		console.log("SUCCESS!");
-			// 		e.target.reset();
-			// 	},
-			// 	(error) => {
-			// 		console.log("FAILED...", error.text);
-			// 	}
-			// );
+			.sendForm("service_bvqgwuy", "template_tk3r0i1", form.current, {
+				publicKey: "Xibf18pA3r3xUWwtY",
+			})
+			.then(
+				() => {
+					console.log("SUCCESS!");
+					e.target.reset();
+				},
+				(error) => {
+					console.log("FAILED...", error.text);
+				}
+			);
 	};
 
-		// const handleRemoveSendPopup = () => {
-	// 	const sendAnim: Element | null = document.getElementById("send-anim");
-	// 	if(sendAnim) sendAnim.id = "";
-	// };
-
-	// const handleSendMessagePopup = () => {
-
-	// 	const sendEl: Element | null = document.querySelector(".send-popUp");
-	// 	if(sendEl){
-	// 		sendEl.id = "send-anim";
-	// 		sendEl.addEventListener("animationend", handleRemoveSendPopup);
-	// 		return ()=>{
-	// 			sendEl.removeEventListener("animationend", handleRemoveSendPopup);
-	// 		}
-	// 	}
-	// };
 
 
 
