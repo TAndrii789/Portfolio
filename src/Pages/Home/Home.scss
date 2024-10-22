@@ -1,31 +1,33 @@
 $font-color: rgb(228, 231, 237);
+
 $bg-color: rgb(5, 30, 56);
-$neon-color: #16F529;
+$neon-color: #16f529;
 body {
 	overflow: hidden;
 	height: 100vh;
 	position: relative;
-	background-color: $bg-color;
+	background: linear-gradient(0.25turn, #000, #050569, #000);
 }
 
 ::-webkit-scrollbar {
 	width: 13px;
+	background: linear-gradient(0.25turn, #000007, #000);
 }
 
 ::-webkit-scrollbar-thumb {
 	background: #999;
 	border-radius: 10px;
 	background-clip: content-box;
-	border: 3px solid transparent;
+	border: 3px solid black;
 }
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #777;
 	background-clip: content-box;
-	border: 3px solid transparent;
+	border: 3px solid black;
 }
 ::-webkit-scrollbar-corner {
-	background-color: transparent;
+	background: linear-gradient(0.25turn, #000007, #000);
 }
 
 #root {
@@ -74,30 +76,29 @@ body {
 		}
 	}
 
-
-	.github {
+	.github, .linkedin {
 		position: fixed;
 		width: 32px;
 		height: 32px;
 		bottom: 10vh;
 		left: 21px;
-		background-color: $bg-color;
-		box-shadow: 0 0 5px 5px $bg-color;
+		background-color: #02000e;
+		box-shadow: 0 0 5px 5px #02000e;
 	}
 
 	.linkedin {
-		position: fixed;
-		width: 32px;
-		height: 32px;
 		bottom: 19vh;
-		left: 21px;
-		background-color: $bg-color;
-		box-shadow: 0 0 5px 5px $bg-color;
 	}
+
+	.github:hover, .linkedin:hover{
+		width: 34px;
+		height: 34px;
+		transition: all 0.3s ease-in-out; 
+	}
+
 	.line {
 		position: fixed;
 		width: 4px;
-		// background-color: #adadad;
 		background-color: #adadad;
 		height: 30vh;
 		bottom: 0;
@@ -115,29 +116,51 @@ body {
 		border-radius: 2px;
 		border: none;
 	}
-	.gmail-line{
-		text-shadow:0 0 2px #01ff00;
+	.gmail-line {
+		text-shadow: 0 0 2px #01ff00;
 		letter-spacing: 0;
 		position: fixed;
-		font-size: 1em;
-		font-weight: 700;
+		font-size: 10px;
+		font-weight: 900;
 		width: 32px;
 		margin-bottom: 3vh;
 		bottom: 0;
 		right: 25px;
 		text-align: center;
 		writing-mode: vertical-rl;
-		text-orientation: upright; 
+		text-orientation: upright;
 		user-select: none;
 		cursor: pointer;
 	}
+
+	.copy-popUp, .send-popUp{
+		opacity: 0;
+		user-select: none;
+		align-content: center;
+		transition: all 0.3s ease-in-out; 
+	}
+	#copy-anim, #send-anim{
+		width: 150px;
+		height: 50px;
+		text-align: center;
+		position: fixed;
+		bottom: 10px;
+		right: 50px;
+		border: 2px solid #999;
+		border-radius: 8%;
+		font-size: 17px;
+		opacity: 1;
+		animation: copy_message 2.7s ease-in-out;
+	}
+
+	
 }
 
 .nav-bar {
 	position: fixed;
 	z-index: 1;
-	background-color: $bg-color;
-	box-shadow:  0 5px 10px rgba(5, 23, 42, 0.99);
+	background: radial-gradient(#050569, #000);
+	box-shadow: 0 5px 10px rgba(5, 23, 42, 0.99);
 	.inside-nav {
 		position: relative;
 		display: flex;
@@ -170,21 +193,35 @@ body {
 			justify-content: space-around;
 			width: 40vw;
 			font-size: 20px;
+			a {
+				text-decoration: none;
+				color: $font-color;
+				transition: 0.2s ease-in-out;
+			}
+			a:hover {
+				font-size: 22px;
+				transition: 0.2s ease-in-out;
+			}
 			button {
-				color:$neon-color;
+				color: $neon-color;
 				background-color: transparent;
 				border: 2px solid $neon-color;
 				font-size: 1em;
 				padding: 5px;
 				border-radius: 8px;
-				.download-btn{
+				.download-btn {
 					text-decoration: none;
-					color: $neon-color
+					color: $neon-color;
 				}
 			}
-			
 		}
 	}
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .start-animation {
@@ -231,5 +268,14 @@ body {
 	100% {
 		width: 0;
 		height: 0;
+	}
+}
+
+@keyframes copy_message {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
 	}
 }

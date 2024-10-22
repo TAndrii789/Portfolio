@@ -15,7 +15,12 @@
 		"serve": "vite preview"
 	},
 	"dependencies": {
+		"@emailjs/browser": "^4.4.1",
+		"@types/nodemailer": "^6.4.16",
 		"check-node-version": "^4.2.1",
+		"emailjs": "^4.0.3",
+		"emailjs-com": "^3.2.0",
+		"nodemailer": "^6.9.15",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"react-router-dom": "^6.26.2",

@@ -1,0 +1,132 @@
+.contact-content {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-content .atom-loader {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+.contact-content .atom-loader .line {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.contact-content .atom-loader .line-1 {
+  border-bottom: 10px solid #00e5ff;
+  border-top: 10px solid #00e5ff;
+  filter: drop-shadow(0 0 10px #00e5ff);
+  border-radius: 50%;
+  animation: line1 3s linear infinite;
+}
+@keyframes line1 {
+  0% {
+    transform: rotateY(70deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateY(70deg) rotateZ(360deg);
+  }
+}
+.contact-content .atom-loader .line-2 {
+  border-bottom: 10px solid #00ff7b;
+  border-top: 10px solid #00ff7b;
+  filter: drop-shadow(0 0 10px #00ff7b);
+  border-radius: 50%;
+  animation: line2 3s linear infinite;
+}
+@keyframes line2 {
+  0% {
+    transform: rotateX(80deg) rotateY(25deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(80deg) rotateY(25deg) rotateZ(360deg);
+  }
+}
+.contact-content .atom-loader .line-3 {
+  border-bottom: 10px solid #bf43f9;
+  border-top: 10px solid #bf43f9;
+  filter: drop-shadow(0 0 10px #bf43f9);
+  border-radius: 50%;
+  animation: line3 3s linear infinite;
+}
+@keyframes line3 {
+  0% {
+    transform: rotateX(-80deg) rotateY(25deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(-80deg) rotateY(25deg) rotateZ(360deg);
+  }
+}
+.contact-content .contact-containers {
+  width: 50vw;
+}
+.contact-content .contact-containers form {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 0 5vh 15vw;
+  margin-right: 3vw;
+}
+.contact-content .contact-containers form * {
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.contact-content .contact-containers form h1 {
+  font-size: 20px;
+  display: flex;
+}
+.contact-content .contact-containers form h1 p {
+  margin-left: 7px;
+  color: #01ff00;
+}
+.contact-content .contact-containers form .inp-text,
+.contact-content .contact-containers form .inp-email {
+  height: 25px;
+  background-color: #eee;
+  border: 1px solid #777;
+}
+.contact-content .contact-containers form textarea {
+  background-color: #eee;
+  border: 1px solid #777;
+  height: 100px;
+  resize: vertical;
+}
+.contact-content .contact-containers form .send {
+  margin-top: 20px;
+  height: 33px;
+  color: #030135;
+  background-color: #01ff00;
+  font-weight: 600;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.contact-content .contact-containers form .send:hover {
+  font-size: 17px;
+  background-color: rgba(0, 255, 0, 0.9098039216);
+  color: #020049;
+}
+
+.atom-loader:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  box-shadow: inset 0 0 10px #fff;
+  border-radius: 50%;
+}
+
+@keyframes send_message {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

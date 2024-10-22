@@ -6,11 +6,7 @@ import "./Projects.css";
 
 export const Projects = () => {
 	return (
-		<div className="projects-root">
-			<a
-				href="https://github.com/TAndrii789/CryptoCurrency.git"
-				target="_blank"
-			></a>
+		<div className="projects-root" id="projects">
 			<hr className="project-hr" />
 			<div className="projects">
 				<h2>Projects I've built</h2>

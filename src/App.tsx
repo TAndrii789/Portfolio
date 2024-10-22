@@ -1,4 +1,5 @@
 import { Home } from "./Pages/Home/Home";
+import "./index.scss"
 
 function App() {
 	return (
