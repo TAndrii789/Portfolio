@@ -72,7 +72,7 @@ body {
 			max-width: 50vh;
 			border-radius: 50%;
 			margin-left: 10%;
-			margin-right: 25vh;
+			// margin-right: 25vh;
 		}
 	}
 
@@ -135,6 +135,8 @@ body {
 
 	.copy-popUp, .send-popUp{
 		opacity: 0;
+		width: 0;
+		height: 0;
 		user-select: none;
 		align-content: center;
 		transition: all 0.3s ease-in-out; 
