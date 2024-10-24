@@ -1,5 +1,5 @@
 import "./Conatct.css";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 interface ComponentAProps {
@@ -7,11 +7,30 @@ interface ComponentAProps {
 }
 export const Contact: React.FC<ComponentAProps> = ({ onClick }) =>  {
 	const form: any = useRef();
+	const name = useRef<HTMLInputElement | null>(null);
+	const email = useRef<HTMLInputElement | null>(null);
+	const text = useRef<HTMLTextAreaElement>(null)
+	const [info, setInfo] = useState("");
+ 
+
+	const validateEmail = (email: any) => {
+		const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		if(email.current) return emailPattern.test(email.current.value);
+	};
 
 	const sendEmail = (e: any) => {
 		e.preventDefault();
-
-		emailjs
+		if(!name.current?.value){
+			setInfo("Write your name");
+			return;
+		}else if(!validateEmail(email)){
+			setInfo("Invalid email");
+		}else if(!text.current?.value){
+			setInfo("Write your message");
+		}else{
+			setInfo("");
+			onClick()
+			emailjs
 			.sendForm("service_bvqgwuy", "template_tk3r0i1", form.current, {
 				publicKey: "Xibf18pA3r3xUWwtY",
 			})
@@ -24,6 +43,7 @@ export const Contact: React.FC<ComponentAProps> = ({ onClick }) =>  {
 					console.log("FAILED...", error.text);
 				}
 			);
+		}
 	};
 
 
@@ -42,12 +62,19 @@ export const Contact: React.FC<ComponentAProps> = ({ onClick }) =>  {
 						Write me a Message <p>. . .</p>
 					</h1>
 					<label>Your Name</label>
-					<input className="inp-text" type="text" name="user_name" />
+					<input className="inp-text" type="text" name="user_name" ref={name}/>
 					<label>Your Email</label>
-					<input className="inp-email" type="email" name="user_email" />
+					<input className="inp-email" type="email" name="user_email" ref={email}/>
 					<label>Message</label>
-					<textarea name="message" />
-					<input className="send" type="submit" value="Send" onClick={onClick}/>
+					<textarea name="message" ref={text}/>
+					<input className="send" type="submit" value="Send" />
+					<p
+				id="information"
+				className="information"
+				style={{ fontSize: "13px", color: "red" }}
+			>
+				{info}
+			</p>
 				</form>
 				
 			</div>

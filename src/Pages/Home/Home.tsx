@@ -168,11 +168,11 @@ export const Home = () => {
 				</div>
 
 				<hr className="line"></hr>
-				<a href="https://github.com/TAndrii789" target="_blank">
+				<a className="github" href="https://github.com/TAndrii789" target="_blank">
 					<img className="github" src={github} alt="" />
 				</a>
 
-				<a
+				<a className="linkedin"
 					href="https://www.linkedin.com/in/andrii-tomkiv-887162303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 					target="_blank"
 				>
