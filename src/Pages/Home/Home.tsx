@@ -182,11 +182,8 @@ export const Home = () => {
 				<p onClick={handleCopy} className="gmail-line">
 					Andrytomkiv789@gmail.com
 				</p>
-				<div className="popup-container">
 					<div className="copy-popUp">Copied</div>
 				  <div className="send-popUp">Message heve been sent</div>
-				</div>
-				
 			</div>
 			<Projects />
 			<Contact onClick={handleClickFromComponentA} />
