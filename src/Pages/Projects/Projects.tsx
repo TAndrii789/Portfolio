@@ -3,6 +3,7 @@ import numpazPhoto from "../../assets/img/numpaz.png";
 import pairPhoto from "../../assets/img/pair.png";
 import github from "../../assets/originSvg/originGithub.svg";
 import "./Projects.css";
+import "../Home/Home.css";
 
 export const Projects = () => {
 	return (
@@ -11,8 +12,8 @@ export const Projects = () => {
 			<div className="projects">
 				<h2>Projects I've built</h2>
 				<div className="crypto">
-					<img src={cryptoPhoto} className="cryptoPhoto  sample1" />
-					<div className="text1 sample1">
+					<img src={cryptoPhoto} className="cryptoPhoto   img" />
+					<div className="text1">
 						<h3>CryptoCurrency</h3>
 						<h4>
 							Changing is coming and currency doesn't stay aside. The app helps
@@ -26,16 +27,20 @@ export const Projects = () => {
 							>
 								<img className="github" src={github} alt="" />
 							</a>
-							<a className="try" href="\Portfolio\CryptoCurrency\index.html" target="_blank" rel="noopener noreferrer">Try It</a>
+							<a
+								className="try"
+								href="\Portfolio\CryptoCurrency\index.html"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Try It
+							</a>
 						</span>
 					</div>
 				</div>
-				
 
-
-				
 				<div className="numpaz">
-					<div className="text2 sample2">
+					<div className="text2">
 						<h3>Numpuz</h3>
 						<h4>
 							Changing is coming and currency doesn't stay aside. The app helps
@@ -47,17 +52,24 @@ export const Projects = () => {
 								href="https://github.com/TAndrii789/numpuz.git"
 								target="_blank"
 							>
-								<img className="github" src={github}/>
+								<img className="github" src={github} />
 							</a>
-							<a className="try" href="\Portfolio\Numpuz\index.html" target="_blank" rel="noopener noreferrer">Try It</a>
+							<a
+								className="try"
+								href="\Portfolio\Numpuz\index.html"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Try It
+							</a>
 						</span>
 					</div>
-					<img src={numpazPhoto} className="numpazPhoto sample2" />
+					<img src={numpazPhoto} className="numpazPhoto img" />
 				</div>
 
 				<div className="pair">
-					<img src={pairPhoto} className="pairPhoto sample3" />
-					<div className="text3 sample3">
+					<img src={pairPhoto} className="pairPhoto img" />
+					<div className="text3">
 						<h3>Find-a-Pair</h3>
 						<h4>
 							Changing is coming and currency doesn't stay aside. The app helps
@@ -71,7 +83,14 @@ export const Projects = () => {
 							>
 								<img className="github" src={github} alt="" />
 							</a>
-							<a className="try" href="\Portfolio\Find-a-Pair\index.html" target="_blank" rel="noopener noreferrer">Try It</a>
+							<a
+								className="try"
+								href="\Portfolio\Find-a-Pair\index.html"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Try It
+							</a>
 						</span>
 					</div>
 				</div>

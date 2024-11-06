@@ -15,10 +15,16 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100, "YTLC" 500;
+  max-width: 100%;
 }
 
 #root {
   margin: 0;
   padding: 0;
   color: rgb(228, 231, 237);
+}
+
+.new {
+  display: flex;
+  flex-direction: column;
 }

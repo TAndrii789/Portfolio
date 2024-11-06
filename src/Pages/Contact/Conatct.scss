@@ -68,11 +68,13 @@
 		}
 	}
 	.contact-containers {
+
 		form {
 			display: flex;
 			flex-direction: column;
 			padding: 5vh 0 5vh 15vw;
 			margin-right: 3vw;
+			width: 350px;
 			* {
 				margin: 5px 0;
 				border-radius: 5px;
@@ -113,7 +115,7 @@
 				color: #020049;
 			}
 		}
-		width: 50vw;
+
 	}
 }
 
@@ -125,4 +127,25 @@
 	background: transparent;
 	box-shadow: inset 0 0 10px #fff;
 	border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 480px) {
+	.contact-content{
+		max-width: 100%;
+		margin-bottom: 0;
+		.atom-loader{
+			width: 270px;
+			height: 270px;
+		}
+		flex-direction: column;
+		.contact-containers{
+
+			form{
+				padding-left: 0;
+				margin-right: 0;
+				width: 270px;
+			}
+		}
+	}
 }

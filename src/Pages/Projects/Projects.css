@@ -12,10 +12,14 @@
   border: 0;
 }
 .projects-root .projects {
-  padding: 10vh 0;
+  padding: 6vw 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .projects-root .projects h2 {
   padding-left: 10vh;
+  padding-bottom: 3vw;
 }
 .projects-root .projects .crypto,
 .projects-root .projects .numpaz,
@@ -23,18 +27,14 @@
   display: flex;
   padding: 10vh;
 }
-.projects-root .projects .crypto .sample1, .projects-root .projects .crypto .sample3,
-.projects-root .projects .numpaz .sample1,
-.projects-root .projects .numpaz .sample3,
-.projects-root .projects .pair .sample1,
-.projects-root .projects .pair .sample3 {
-  display: inline-block;
-  text-align: right;
-}
-.projects-root .projects .crypto .sample2,
-.projects-root .projects .numpaz .sample2,
-.projects-root .projects .pair .sample2 {
-  text-align: left;
+.projects-root .projects .crypto .img,
+.projects-root .projects .numpaz .img,
+.projects-root .projects .pair .img {
+  width: 35vw;
+  height: auto;
+  aspect-ratio: 16/9;
+  display: block;
+  max-width: 100%;
 }
 .projects-root .projects .crypto .github,
 .projects-root .projects .numpaz .github,
@@ -49,6 +49,7 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 5vh;
+  text-align: right;
 }
 .projects-root .projects .crypto .text1 h3,
 .projects-root .projects .numpaz .text1 h3,
@@ -79,6 +80,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-right: 5vh;
+  text-align: left;
 }
 .projects-root .projects .crypto .text2 h3,
 .projects-root .projects .numpaz .text2 h3,
@@ -109,6 +111,7 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 5vh;
+  text-align: right;
 }
 .projects-root .projects .crypto .text3 h3,
 .projects-root .projects .numpaz .text3 h3,
@@ -152,17 +155,66 @@
   background-color: hsla(0, 0%, 100%, 0.096);
   transition: 0.2s ease-in-out;
 }
-.projects-root .projects .crypto img,
-.projects-root .projects .numpaz img,
-.projects-root .projects .pair img {
-  max-width: 30vw;
-  max-height: 100%;
-  min-height: 100%;
-  padding-right: 10vh;
-}
 .projects-root .projects .crypto .numpazPhoto,
 .projects-root .projects .numpaz .numpazPhoto,
 .projects-root .projects .pair .numpazPhoto {
   padding-right: 0;
   padding-left: 10vh;
+}
+
+@media only screen and (max-width: 480px) {
+  .projects-root {
+    max-width: 100%;
+    align-items: center;
+  }
+  .projects-root .projects h2 {
+    padding: 7vw 0;
+  }
+  .projects-root .projects .crypto,
+  .projects-root .projects .pair {
+    flex-direction: column;
+    padding: 10vw;
+    align-items: center;
+  }
+  .projects-root .projects .crypto .img,
+  .projects-root .projects .pair .img {
+    width: 62vw;
+  }
+  .projects-root .projects .crypto .text1, .projects-root .projects .crypto .text3,
+  .projects-root .projects .pair .text1,
+  .projects-root .projects .pair .text3 {
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    width: 55vw;
+  }
+  .projects-root .projects .crypto .text1 h3, .projects-root .projects .crypto .text3 h3,
+  .projects-root .projects .pair .text1 h3,
+  .projects-root .projects .pair .text3 h3 {
+    margin-top: 35px;
+  }
+  .projects-root .projects .crypto .text1 h4, .projects-root .projects .crypto .text3 h4,
+  .projects-root .projects .pair .text1 h4,
+  .projects-root .projects .pair .text3 h4 {
+    width: 55vw;
+  }
+  .projects-root .projects .numpaz {
+    flex-direction: column-reverse;
+    padding: 10vw;
+  }
+  .projects-root .projects .numpaz .img {
+    width: 65vw;
+    padding-left: 0;
+  }
+  .projects-root .projects .numpaz .text2 {
+    text-align: center;
+    align-items: center;
+    padding: 0;
+  }
+  .projects-root .projects .numpaz .text2 h3 {
+    margin-top: 35px;
+  }
+  .projects-root .projects .numpaz .text2 h4 {
+    width: 55vw;
+  }
 }

@@ -13,32 +13,37 @@ $font-color: rgb(228, 231, 237);
 		border: 0;
 	}
 	.projects {
-		padding: 10vh 0;
+		padding: 6vw 0;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 		h2 {
 			padding-left: 10vh;
+			padding-bottom: 3vw;
 		}
 		.crypto,
 		.numpaz,
-		.pair {
+		.pair {	
 			display: flex;
 			padding: 10vh;
-			.sample1, .sample3 {
-				display: inline-block;
-				text-align: right;
-			
-			}
-			.sample2{
-				text-align: left;
+			.img{
+				width: 35vw;
+				height: auto;
+				aspect-ratio: 16/9;
+				display: block;
+				max-width: 100%;
 			}
 			.github {
 				width: 32px;
 				padding-right: 7vh;
+
 			}
 			.text1 {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-        padding-left: 5vh;
+				padding-left: 5vh;
+				text-align: right;
 				h3 {
 					font-size: 20px;
 				}
@@ -48,7 +53,7 @@ $font-color: rgb(228, 231, 237);
 					width: 20vw;
 					margin: 2.5vh 0;
 					font-size: 18px;
-          font-weight: 500;
+					font-weight: 500;
 					padding: 1vh 2vh;
 					box-shadow: 3px 4px 3px 1px rgb(1, 18, 36);
 				}
@@ -61,7 +66,8 @@ $font-color: rgb(228, 231, 237);
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-        padding-right: 5vh;
+				padding-right: 5vh;
+				text-align: left;
 				h3 {
 					font-size: 20px;
 				}
@@ -70,7 +76,7 @@ $font-color: rgb(228, 231, 237);
 					width: 20vw;
 					margin: 2.5vh 0;
 					font-size: 18px;
-          font-weight: 500;
+					font-weight: 500;
 					padding: 1vh 2vh;
 					box-shadow: -3px 4px 3px 1px rgb(1, 18, 36);
 				}
@@ -83,7 +89,8 @@ $font-color: rgb(228, 231, 237);
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-        padding-left: 5vh;
+				padding-left: 5vh;
+				text-align: right;
 				h3 {
 					font-size: 20px;
 				}
@@ -92,7 +99,7 @@ $font-color: rgb(228, 231, 237);
 					width: 20vw;
 					margin: 2.5vh 0;
 					font-size: 18px;
-          font-weight: 500;
+					font-weight: 500;
 					padding: 1vh 2vh;
 					box-shadow: 3px 4px 3px 1px rgb(1, 18, 36);
 				}
@@ -101,8 +108,8 @@ $font-color: rgb(228, 231, 237);
 					justify-content: end;
 				}
 			}
-				
-			.try{
+
+			.try {
 				background-color: transparent;
 				border: #adadad 3px solid;
 				font-size: 1em;
@@ -114,22 +121,69 @@ $font-color: rgb(228, 231, 237);
 				color: $font-color;
 				font-weight: 600;
 			}
-			.try:hover{
+			.try:hover {
 				background-color: hsla(0, 0%, 100%, 0.096);
 				transition: 0.2s ease-in-out;
 			}
-
-			img {
-				max-width: 30vw;
-				max-height: 100%;
-				min-height: 100%;
-        padding-right: 10vh;
-			}
-
-			.numpazPhoto{
+			.numpazPhoto {
 				padding-right: 0;
 				padding-left: 10vh;
 			}
 		}
 	}
+}
+
+@media only screen and (max-width: 480px) {
+	.projects-root{
+		max-width: 100%;
+		align-items: center;
+		.projects{
+			h2{
+				padding: 7vw 0;
+			}
+			.crypto,
+			.pair{
+				flex-direction: column;
+				padding: 10vw;
+				align-items: center;
+				.img{
+					width: 62vw; 
+				}
+				.text1, .text3{
+					text-align: center;
+					align-items: center;
+					padding: 0;
+					width: 55vw;
+					h3{
+						margin-top: 35px;
+					}
+					h4{
+						width: 55vw;
+					}
+				}
+		
+			}
+			.numpaz{
+				flex-direction: column-reverse;
+				padding: 10vw;
+				.img{
+					width: 65vw;
+					padding-left: 0;
+				}
+				.text2{
+					text-align: center;
+					align-items: center;
+					padding: 0;
+					h3{
+						margin-top: 35px;
+					}
+					h4{
+						width: 55vw;
+					}
+				}
+			}
+		}
+	}
+	
+
 }

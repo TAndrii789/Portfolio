@@ -50,6 +50,7 @@ body {
 	display: none;
 	height: 100vh;
 	align-items: center;
+	justify-content: center;
 	.greeting {
 		flex: 1;
 		margin-left: 25vh;
@@ -76,7 +77,8 @@ body {
 		}
 	}
 
-	.github, .linkedin {
+	.github,
+	.linkedin {
 		position: fixed;
 		width: 32px;
 		height: 32px;
@@ -90,10 +92,11 @@ body {
 		bottom: 19vh;
 	}
 
-	.github:hover, .linkedin:hover{
+	.github:hover,
+	.linkedin:hover {
 		width: 34px;
 		height: 34px;
-		transition: all 0.3s ease-in-out; 
+		transition: all 0.3s ease-in-out;
 	}
 
 	.line {
@@ -133,15 +136,17 @@ body {
 		cursor: pointer;
 	}
 
-	.copy-popUp, .send-popUp{
+	.copy-popUp,
+	.send-popUp {
 		opacity: 0;
 		width: 0;
 		height: 0;
 		user-select: none;
 		align-content: center;
-		transition: all 0.3s ease-in-out; 
+		transition: all 0.3s ease-in-out;
 	}
-	#copy-anim, #send-anim{
+	#copy-anim,
+	#send-anim {
 		width: 150px;
 		height: 50px;
 		text-align: center;
@@ -154,8 +159,6 @@ body {
 		opacity: 1;
 		animation: copy_message 2.7s ease-in-out;
 	}
-
-	
 }
 
 .nav-bar {
@@ -279,5 +282,47 @@ body {
 	}
 	to {
 		opacity: 0;
+	}
+}
+@media only screen and (max-width: 1500px)  {
+	.photo{
+		margin-right: 25vh;
+	}
+}
+@media only screen and (max-width: 480px) {
+	html{
+		max-width: 100%;
+		body{
+			overflow: hidden;
+		}
+
+	}
+	.nav-bar{
+		max-width: 100%;
+		.inside-nav{
+			.navigation{
+				display: none;
+			}
+		}
+	}
+	.content{
+		max-width: 100%;
+		flex-direction: column-reverse;
+		.greeting{
+			margin: 0 17vw;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+		}
+		.photo-container{
+			align-items: center;
+			justify-content: center;
+			.photo{
+				width: 70vw;
+				margin:0;
+				margin-top: 10vh;
+				margin-bottom: 2vh;
+			}
+		}
 	}
 }

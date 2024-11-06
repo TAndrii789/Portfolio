@@ -47,6 +47,7 @@ body {
   display: none;
   height: 100vh;
   align-items: center;
+  justify-content: center;
 }
 .content .greeting {
   flex: 1;
@@ -72,7 +73,8 @@ body {
   border-radius: 50%;
   margin-left: 10%;
 }
-.content .github, .content .linkedin {
+.content .github,
+.content .linkedin {
   position: fixed;
   width: 32px;
   height: 32px;
@@ -84,7 +86,8 @@ body {
 .content .linkedin {
   bottom: 19vh;
 }
-.content .github:hover, .content .linkedin:hover {
+.content .github:hover,
+.content .linkedin:hover {
   width: 34px;
   height: 34px;
   transition: all 0.3s ease-in-out;
@@ -125,7 +128,8 @@ body {
   user-select: none;
   cursor: pointer;
 }
-.content .copy-popUp, .content .send-popUp {
+.content .copy-popUp,
+.content .send-popUp {
   opacity: 0;
   width: 0;
   height: 0;
@@ -133,7 +137,8 @@ body {
   align-content: center;
   transition: all 0.3s ease-in-out;
 }
-.content #copy-anim, .content #send-anim {
+.content #copy-anim,
+.content #send-anim {
   width: 150px;
   height: 50px;
   text-align: center;
@@ -265,5 +270,44 @@ body {
   }
   to {
     opacity: 0;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .photo {
+    margin-right: 25vh;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html {
+    max-width: 100%;
+  }
+  html body {
+    overflow: hidden;
+  }
+  .nav-bar {
+    max-width: 100%;
+  }
+  .nav-bar .inside-nav .navigation {
+    display: none;
+  }
+  .content {
+    max-width: 100%;
+    flex-direction: column-reverse;
+  }
+  .content .greeting {
+    margin: 0 17vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .photo-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .content .photo-container .photo {
+    width: 70vw;
+    margin: 0;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
   }
 }

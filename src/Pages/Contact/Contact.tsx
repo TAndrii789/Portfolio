@@ -1,6 +1,7 @@
 import "./Conatct.css";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import "../Home/Home.css";
 
 interface ComponentAProps {
   onClick: () => void; 

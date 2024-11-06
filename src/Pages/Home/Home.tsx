@@ -21,11 +21,11 @@ export const Home = () => {
 	);
 
 	let popUps: Array<string> = [];
-	let popupAmount: number =  10;
+	let popupAmount: number = 10;
 
-	const addToPopupAmount = ()=>{
-		popupAmount+=popUps.length * 65
-	}
+	const addToPopupAmount = () => {
+		popupAmount += popUps.length * 65;
+	};
 
 	const handleAnimationEnd = () => {
 		const circle: Element | null = document.querySelector(".circle");
@@ -64,10 +64,10 @@ export const Home = () => {
 		if (copyAnim) {
 			(copyAnim as HTMLElement).style.bottom = "10px";
 			copyAnim.id = "";
-			const count = popUps.filter(item => item === "copy-anim").length;
-			popUps = popUps.filter(item => item !== "copy-anim");
-			
-			if (popupAmount>10) popupAmount-=count * 65
+			const count = popUps.filter((item) => item === "copy-anim").length;
+			popUps = popUps.filter((item) => item !== "copy-anim");
+
+			if (popupAmount > 10) popupAmount -= count * 65;
 		}
 	};
 
@@ -75,19 +75,17 @@ export const Home = () => {
 	const handleCopy = () => {
 		navigator.clipboard.writeText(copyText);
 		const copyEl: Element | null = document.querySelector(".copy-popUp");
-		
 
 		if (copyEl) {
 			copyEl.id = "copy-anim";
 			const copyAnim: Element | null = document.getElementById("copy-anim");
 			if (copyAnim) popUps.push(copyAnim.id);
-			
 
-			if(popupAmount>10){
+			if (popupAmount > 10) {
 				(copyAnim as HTMLElement).style.bottom = `75px`;
 			}
-			popupAmount = 10
-			addToPopupAmount()
+			popupAmount = 10;
+			addToPopupAmount();
 
 			copyEl.addEventListener("animationend", handleRemoveCopyPopup);
 			return () => {
@@ -101,9 +99,9 @@ export const Home = () => {
 		if (sendAnim) {
 			(sendAnim as HTMLElement).style.bottom = "10px";
 			sendAnim.id = "";
-			const count = popUps.filter(item => item === "send-anim").length;
-			popUps = popUps.filter(item => item !== "send-anim");
-			if (popupAmount>10) popupAmount-=count*65
+			const count = popUps.filter((item) => item === "send-anim").length;
+			popUps = popUps.filter((item) => item !== "send-anim");
+			if (popupAmount > 10) popupAmount -= count * 65;
 		}
 	};
 
@@ -114,10 +112,10 @@ export const Home = () => {
 			const sendAnim: Element | null = document.getElementById("send-anim");
 			if (sendAnim) popUps.push(sendAnim.id);
 
-			if(popupAmount>10){
+			if (popupAmount > 10) {
 				(sendAnim as HTMLElement).style.bottom = `75px`;
-			} 
-			popupAmount = 10
+			}
+			popupAmount = 10;
 			addToPopupAmount();
 
 			sendEl?.addEventListener("animationend", handleRemoveSendPopup);
@@ -126,8 +124,6 @@ export const Home = () => {
 			};
 		}
 	};
-
-
 
 	return (
 		<>
@@ -168,11 +164,16 @@ export const Home = () => {
 				</div>
 
 				<hr className="line"></hr>
-				<a className="github" href="https://github.com/TAndrii789" target="_blank">
+				<a
+					className="github"
+					href="https://github.com/TAndrii789"
+					target="_blank"
+				>
 					<img className="github" src={github} alt="" />
 				</a>
 
-				<a className="linkedin"
+				<a
+					className="linkedin"
 					href="https://www.linkedin.com/in/andrii-tomkiv-887162303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 					target="_blank"
 				>
@@ -182,8 +183,8 @@ export const Home = () => {
 				<p onClick={handleCopy} className="gmail-line">
 					Andrytomkiv789@gmail.com
 				</p>
-					<div className="copy-popUp">Copied</div>
-				  <div className="send-popUp">Message heve been sent</div>
+				<div className="copy-popUp">Copied</div>
+				<div className="send-popUp">Message heve been sent</div>
 			</div>
 			<Projects />
 			<Contact onClick={handleClickFromComponentA} />
