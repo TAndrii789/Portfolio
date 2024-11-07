@@ -31,6 +31,7 @@ export const Home = () => {
 		const circle: Element | null = document.querySelector(".circle");
 		const body: Element | null = document.querySelector("body");
 		const navigation: Element | null = document.querySelector(".navigation");
+		const list: Element | null = document.querySelector(".list");
 		if (circle) {
 			circle.classList.add("circle-expand");
 			circle.addEventListener("animationend", () => {
@@ -43,12 +44,16 @@ export const Home = () => {
 
 				circle.classList.add("circle-shrink");
 				(navigation as HTMLElement).style.display = "flex";
+				if(window.innerWidth <= 480){
+					(list as HTMLElement).style.display = "block";
+				}
 				circle.addEventListener("animationend", () => {
 					(body as HTMLElement).style.overflowY = "auto";
 				});
 			});
 		}
 	};
+
 
 	useEffect(() => {
 		const animElement: Element | null =

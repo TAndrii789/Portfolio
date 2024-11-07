@@ -319,7 +319,7 @@ body {
     opacity: 0;
   }
   .nav-bar .inside-nav .list {
-    display: block;
+    display: none;
   }
   .nav-bar .inside-nav .menu-active {
     transform: translateX(0%);
