@@ -125,26 +125,48 @@ export const Home = () => {
 		}
 	};
 
+
+	const listClick = ()=>{
+		const navigation: Element | null = document.querySelector(".navigation");
+		const list: Element | null = document.querySelector(".list");
+		const navLinks: any | null = document.querySelectorAll(".navigation a");
+
+	navigation?.classList.toggle("menu-active")
+	navLinks?.forEach((link: Element, index: number) => {
+		if ((link as HTMLElement).style.animation) {
+			(link as HTMLElement).style.animation = "";
+		} else {
+			(link as HTMLElement).style.animation = `navLinkFade 0.5s ease forwards ${
+				index / 7 + 0.5
+			}s`;
+		}
+	});
+	list?.classList.toggle("tog");
+}
+
 	return (
 		<>
 			<div className="nav-bar start-animation">
 				<div className="inside-nav">
 					<div className="logo"> {htmlContent}</div>
 					<div className="navigation">
-						<a className="about-me" href="#about-me">
+						<a className="about-me" href="#about-me" onClick={listClick}>
 							About Me
 						</a>
-						<a className="projects-nav" href="#projects">
+						<a className="projects-nav" href="#projects" onClick={listClick}>
 							Projects
 						</a>
-						<a className="contact" href="#contact">
+						<a className="contact" href="#contact" onClick={listClick}>
 							Contact
-						</a>
-						<button>
-							<a href={CV} download className="download-btn">
+						</a>					
+							<a href={CV} download className="download-btn" onClick={listClick}>
 								Resume
-							</a>
-						</button>
+							</a>						
+					</div>
+					<div className="list" onClick={listClick}>
+							<hr className="line1"></hr>
+							<hr className="line2"></hr>
+							<hr className="line3"></hr>
 					</div>
 				</div>
 			</div>

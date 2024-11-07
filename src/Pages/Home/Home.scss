@@ -207,17 +207,28 @@ body {
 				font-size: 22px;
 				transition: 0.2s ease-in-out;
 			}
-			button {
+			.download-btn {
+				text-decoration: none;
 				color: $neon-color;
 				background-color: transparent;
 				border: 2px solid $neon-color;
 				font-size: 1em;
 				padding: 5px;
 				border-radius: 8px;
-				.download-btn {
-					text-decoration: none;
-					color: $neon-color;
-				}
+			}
+		}
+		.list {
+			display: none;
+			cursor: pointer;
+			z-index: 1;
+			hr {
+				width: 25px;
+				height: 2px;
+				background-color: $font-color;
+				border-radius: 3%;
+				margin: 5px 20px 0;
+				transition: all 0.3s ease;
+				z-index: 1;
 			}
 		}
 	}
@@ -284,43 +295,92 @@ body {
 		opacity: 0;
 	}
 }
-@media only screen and (max-width: 1500px)  {
-	.photo{
+@media only screen and (max-width: 1500px) {
+	.photo {
 		margin-right: 25vh;
 	}
 }
 @media only screen and (max-width: 480px) {
-	html{
+	html {
 		max-width: 100%;
-		body{
+		body {
 			overflow: hidden;
 		}
-
 	}
-	.nav-bar{
+	.nav-bar {
 		max-width: 100%;
-		.inside-nav{
-			.navigation{
+
+		.inside-nav {
+			.navigation  {
 				display: none;
+				position: absolute;
+        z-index: 1;
+        width: 0%;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background: #04045e;
+				box-shadow: -3px 0px 5px rgba(5, 23, 42, 0.99);
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+        overflow-x: hidden;
+				a{
+					opacity: 0;
+				}
 			}
+			.list {
+				display: block;
+			}
+			.menu-active {
+				transform: translateX(0%);
+				width: 35%;
+				z-index: 1;
+				
+			}
+			.tog {
+				.line1 {
+					transform: rotate(-45deg) translate(-5px, 6px);
+				}
+				.line2 {
+					opacity: 0;
+				}
+				.line3 {
+					transform: rotate(45deg) translate(-5px, -6px);
+				}
+			}
+
+			@keyframes navLinkFade {
+				from {
+					opacity: 0;
+					transform: translateX(50px);
+				}
+				to {
+					opacity: 1;
+					transform: translateX(0px);
+				}
+			}
+
 		}
 	}
-	.content{
+	.content {
 		max-width: 100%;
 		flex-direction: column-reverse;
-		.greeting{
+		.greeting {
 			margin: 0 17vw;
 			text-align: center;
 			align-items: center;
 			justify-content: center;
 		}
-		.photo-container{
+		.photo-container {
 			align-items: center;
 			justify-content: center;
-			.photo{
+			.photo {
 				width: 70vw;
-				margin:0;
-				margin-top: 100px;
+				margin: 0;
+				margin-top: 150px;
 				margin-bottom: 2vh;
 			}
 		}
