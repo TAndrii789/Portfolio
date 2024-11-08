@@ -113,11 +113,10 @@ body {
   border: none;
 }
 .content .gmail-line {
-  text-shadow: 0 0 2px #01ff00;
   letter-spacing: 0;
   position: fixed;
   font-size: 10px;
-  font-weight: 900;
+  font-weight: 1000;
   width: 32px;
   margin-bottom: 3vh;
   bottom: 0;
@@ -163,6 +162,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+  height: 80px;
   z-index: 1000;
 }
 .nav-bar .inside-nav .logo {
@@ -177,6 +178,7 @@ body {
 .nav-bar .inside-nav .logo .anim-text p {
   font-size: 50px;
   margin: 0;
+  user-select: none;
 }
 .nav-bar .inside-nav .logo .anim-text .circle {
   position: absolute;
@@ -189,19 +191,25 @@ body {
 .nav-bar .inside-nav .navigation {
   display: none;
   justify-content: space-around;
+  align-items: center;
   width: 40vw;
   font-size: 20px;
+  margin-right: 30px;
 }
-.nav-bar .inside-nav .navigation a {
+.nav-bar .inside-nav .navigation span {
+  width: 10vw;
+}
+.nav-bar .inside-nav .navigation span a {
   text-decoration: none;
   color: rgb(228, 231, 237);
   transition: 0.2s ease-in-out;
 }
-.nav-bar .inside-nav .navigation a:hover {
+.nav-bar .inside-nav .navigation span a:hover {
   font-size: 22px;
   transition: 0.2s ease-in-out;
 }
-.nav-bar .inside-nav .navigation .download-btn {
+.nav-bar .inside-nav .navigation span .download-btn {
+  width: auto;
   text-decoration: none;
   color: #16f529;
   background-color: transparent;
@@ -209,6 +217,13 @@ body {
   font-size: 1em;
   padding: 5px;
   border-radius: 8px;
+  transition: 0.2s ease-in-out;
+}
+.nav-bar .inside-nav .navigation span .download-btn:hover {
+  transition: 0.2s ease-in-out;
+}
+.nav-bar .inside-nav .navigation .download-container {
+  user-select: none;
 }
 .nav-bar .inside-nav .list {
   display: none;
@@ -305,7 +320,7 @@ body {
     width: 0%;
     right: 0px;
     height: 92vh;
-    top: 8vh;
+    top: 80px;
     background: #04045e;
     box-shadow: -3px 0px 5px rgba(5, 23, 42, 0.99);
     border-radius: 0px;
@@ -314,8 +329,13 @@ body {
     align-items: center;
     transition: 0.5s ease-in-out;
     overflow-x: hidden;
+    margin-right: 0;
+    align-items: center;
   }
-  .nav-bar .inside-nav .navigation a {
+  .nav-bar .inside-nav .navigation span {
+    width: auto;
+  }
+  .nav-bar .inside-nav .navigation span a {
     opacity: 0;
   }
   .nav-bar .inside-nav .list {
@@ -355,14 +375,27 @@ body {
     align-items: center;
     justify-content: center;
   }
+  .content .greeting p {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  .content .greeting h1 {
+    font-size: 1.8em;
+  }
+  .content .greeting h2 {
+    font-size: 1.1em;
+  }
+  .content .greeting .text {
+    margin-top: 2vh;
+  }
   .content .photo-container {
     align-items: center;
     justify-content: center;
+    margin-top: 130px;
+    position: relative;
   }
   .content .photo-container .photo {
-    width: 70vw;
-    margin: 0;
-    margin-top: 150px;
-    margin-bottom: 2vh;
+    width: 65vw;
+    margin: 2vh 0;
   }
 }

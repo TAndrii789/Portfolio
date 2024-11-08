@@ -120,11 +120,10 @@ body {
 		border: none;
 	}
 	.gmail-line {
-		text-shadow: 0 0 2px #01ff00;
 		letter-spacing: 0;
 		position: fixed;
 		font-size: 10px;
-		font-weight: 900;
+		font-weight: 1000;
 		width: 32px;
 		margin-bottom: 3vh;
 		bottom: 0;
@@ -166,11 +165,14 @@ body {
 	z-index: 1;
 	background: radial-gradient(#050569, #000);
 	box-shadow: 0 5px 10px rgba(5, 23, 42, 0.99);
+
 	.inside-nav {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		text-align: center;
+		height: 80px;
 		z-index: 1000;
 		.logo {
 			margin-left: 2.5vw;
@@ -182,6 +184,7 @@ body {
 				p {
 					font-size: 50px;
 					margin: 0;
+					user-select: none;
 				}
 				.circle {
 					position: absolute;
@@ -196,25 +199,41 @@ body {
 		.navigation {
 			display: none;
 			justify-content: space-around;
+			align-items: center;
 			width: 40vw;
 			font-size: 20px;
-			a {
-				text-decoration: none;
-				color: $font-color;
-				transition: 0.2s ease-in-out;
+			margin-right: 30px;
+			span {
+				width: 10vw;
+				a{
+					text-decoration: none;
+					color: $font-color;
+					transition: 0.2s ease-in-out;
+				}
+				a:hover {
+					font-size: 22px;
+					transition: 0.2s ease-in-out;
+				}
+				.download-btn {
+					width: auto;
+					text-decoration: none;
+					color: $neon-color;
+					background-color: transparent;
+					border: 2px solid $neon-color;
+					font-size: 1em;
+					padding: 5px;
+					border-radius: 8px;
+					transition: 0.2s ease-in-out;
+					
+				}
+				.download-btn:hover{
+					transition: 0.2s ease-in-out;
+				}
 			}
-			a:hover {
-				font-size: 22px;
-				transition: 0.2s ease-in-out;
-			}
-			.download-btn {
-				text-decoration: none;
-				color: $neon-color;
-				background-color: transparent;
-				border: 2px solid $neon-color;
-				font-size: 1em;
-				padding: 5px;
-				border-radius: 8px;
+			
+			.download-container{
+				user-select: none;
+	
 			}
 		}
 		.list {
@@ -318,7 +337,7 @@ body {
         width: 0%;
         right: 0px;
         height: 92vh;
-        top: 8vh;
+        top: 80px;
         background: #04045e;
 				box-shadow: -3px 0px 5px rgba(5, 23, 42, 0.99);
         border-radius: 0px;
@@ -327,8 +346,13 @@ body {
         align-items: center;
         transition: 0.5s ease-in-out;
         overflow-x: hidden;
-				a{
-					opacity: 0;
+				margin-right: 0;
+				align-items: center;
+				span{
+					width: auto;
+					a{
+						opacity: 0;
+					}
 				}
 			}
 			.list {
@@ -373,15 +397,28 @@ body {
 			text-align: center;
 			align-items: center;
 			justify-content: center;
+				p {
+					font-size: 0.9em;
+					font-weight: 500;
+				}
+				h1 {
+					font-size: 1.8em;
+				}
+				h2 {
+					font-size: 1.1em;
+				}
+				.text {
+					margin-top: 2vh;
+				}
 		}
 		.photo-container {
 			align-items: center;
 			justify-content: center;
+			margin-top: 130px;
+			position: relative;
 			.photo {
-				width: 70vw;
-				margin: 0;
-				margin-top: 150px;
-				margin-bottom: 2vh;
+				width: 65vw;
+				margin: 2vh 0;
 			}
 		}
 	}

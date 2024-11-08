@@ -155,18 +155,27 @@ export const Home = () => {
 				<div className="inside-nav">
 					<div className="logo"> {htmlContent}</div>
 					<div className="navigation">
+					<span>
 						<a className="about-me" href="#about-me" onClick={listClick}>
 							About Me
 						</a>
+						</span>
+						<span>
 						<a className="projects-nav" href="#projects" onClick={listClick}>
 							Projects
 						</a>
+						</span>
+						<span>
 						<a className="contact" href="#contact" onClick={listClick}>
 							Contact
-						</a>					
+						</a>
+						</span>
+						<span className="download-container">
 							<a href={CV} download className="download-btn" onClick={listClick}>
 								Resume
-							</a>						
+							</a>	
+						</span>					
+												
 					</div>
 					<div className="list" onClick={listClick}>
 							<hr className="line1"></hr>

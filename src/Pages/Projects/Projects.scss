@@ -5,8 +5,8 @@ $font-color: rgb(228, 231, 237);
 	align-items: center;
 	flex-direction: column;
 	color: $font-color;
+	margin-top: 10vw;
 	hr {
-		margin: 10vh 0 0 0;
 		width: 50vw;
 		height: 1px;
 		background-color: #adadad;
@@ -137,6 +137,9 @@ $font-color: rgb(228, 231, 237);
 	.projects-root{
 		max-width: 100%;
 		align-items: center;
+		hr{
+			margin-top: 10vh;
+		}
 		.projects{
 			h2{
 				padding: 7vw 0;

@@ -3,9 +3,9 @@
   align-items: center;
   flex-direction: column;
   color: rgb(228, 231, 237);
+  margin-top: 10vw;
 }
 .projects-root hr {
-  margin: 10vh 0 0 0;
   width: 50vw;
   height: 1px;
   background-color: #adadad;
@@ -166,6 +166,9 @@
   .projects-root {
     max-width: 100%;
     align-items: center;
+  }
+  .projects-root hr {
+    margin-top: 10vh;
   }
   .projects-root .projects h2 {
     padding: 7vw 0;
