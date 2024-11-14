@@ -137,49 +137,15 @@ $font-color: rgb(228, 231, 237);
 		}
 	}
 }
-// @media only screen and (max-width: 990px) {
-// 	.projects-root{
-// 		max-width: 100%;
-// 		align-items: center;
-// 		hr{
-// 			margin-top: 10vh;
-// 		}
-// 		.projects{
-// 			h2{
-// 				padding: 7vw 0;
-// 			}
-// 			.crypto,
-// 			.pair{
-// 				flex-direction: column;
-// 				padding: 10vw;
-// 				align-items: center;
-// 				.img-container{
-// 					width: 62vw; 
-// 				}
-// 				.text1, .text3{
-// 					text-align: center;
-// 					align-items: center;
-// 					padding: 0;
-// 					width: 55vw;
-// 					h3{
-// 						margin-top: 35px;
-// 					}
-// 					h4{
-// 						width: 55vw;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+
 @media only screen and (max-width: 990px) {
 	.projects-root{
 		max-width: 100%;
 		align-items: center;
 		margin-top: 0;
-		// hr{
-		// 	margin-top: 10vh;
-		// }
+		hr{
+			margin-top: 10vh;
+		}
 		.projects{
 			h2{
 				padding: 5vw 0;
@@ -238,6 +204,12 @@ $font-color: rgb(228, 231, 237);
 			}
 		}
 	}
-	
+}
 
+@media only screen and (max-width: 480px) {
+	.projects-root{
+		hr{
+			margin-top: 0vh;
+		}
+	}
 }

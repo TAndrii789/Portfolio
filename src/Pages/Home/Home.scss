@@ -338,6 +338,7 @@ body {
 			// max-width: 100%;
 			margin-top: 90px;
 			flex-direction: column-reverse;
+
 			.greeting {
 				margin: 0 17vw;
 				text-align: center;
@@ -442,11 +443,13 @@ body {
 	.content {
 		max-width: 100%;
 		flex-direction: column-reverse;
+		height: auto;
 		.greeting {
-			margin: 0 17vw;
+			margin: 5vh 17vw;
 			text-align: center;
 			align-items: center;
 			justify-content: center;
+			margin-bottom: 15vh;
 				p {
 					font-size: 0.9em;
 					font-weight: 500;
@@ -466,6 +469,7 @@ body {
 			align-items: center;
 			justify-content: center;
 			position: relative;
+			margin-bottom: 5vh;
 			.photo {
 				width: 65vw;
 				margin: 2vh 0;

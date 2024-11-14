@@ -408,12 +408,14 @@ body {
   .content {
     max-width: 100%;
     flex-direction: column-reverse;
+    height: auto;
   }
   .content .greeting {
-    margin: 0 17vw;
+    margin: 5vh 17vw;
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15vh;
   }
   .content .greeting p {
     font-size: 0.9em;
@@ -433,6 +435,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 5vh;
   }
   .content .photo-container .photo {
     width: 65vw;
