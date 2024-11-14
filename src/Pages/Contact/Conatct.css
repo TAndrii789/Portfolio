@@ -120,6 +120,25 @@
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 990px) {
+  .contact-content {
+    max-width: 100%;
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+  .contact-content .atom-loader {
+    width: 270px;
+    height: 270px;
+  }
+  .contact-content .contact-containers {
+    margin-top: 70px;
+  }
+  .contact-content .contact-containers form {
+    padding-left: 0;
+    margin-right: 0;
+    width: 55vw;
+  }
+}
 @media only screen and (max-width: 480px) {
   .contact-content {
     max-width: 100%;
@@ -133,6 +152,7 @@
   .contact-content .contact-containers form {
     padding-left: 0;
     margin-right: 0;
-    width: 270px;
+    width: 55vw;
+    min-width: 220px;
   }
 }

@@ -5,7 +5,7 @@ $font-color: rgb(228, 231, 237);
 	align-items: center;
 	flex-direction: column;
 	color: $font-color;
-	margin-top: 10vw;
+	// margin-top: 10vw;
 	hr {
 		width: 50vw;
 		height: 1px;
@@ -26,12 +26,17 @@ $font-color: rgb(228, 231, 237);
 		.pair {	
 			display: flex;
 			padding: 10vh;
-			.img{
+			.img-container{
 				width: 35vw;
 				height: auto;
 				aspect-ratio: 16/9;
 				display: block;
 				max-width: 100%;
+				.img{
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+				}
 			}
 			.github {
 				width: 32px;
@@ -65,7 +70,7 @@ $font-color: rgb(228, 231, 237);
 			.text2 {
 				display: flex;
 				flex-direction: column;
-				justify-content: space-between;
+				justify-content: center;
 				padding-right: 5vh;
 				text-align: left;
 				h3 {
@@ -132,25 +137,65 @@ $font-color: rgb(228, 231, 237);
 		}
 	}
 }
-
-@media only screen and (max-width: 480px) {
+// @media only screen and (max-width: 990px) {
+// 	.projects-root{
+// 		max-width: 100%;
+// 		align-items: center;
+// 		hr{
+// 			margin-top: 10vh;
+// 		}
+// 		.projects{
+// 			h2{
+// 				padding: 7vw 0;
+// 			}
+// 			.crypto,
+// 			.pair{
+// 				flex-direction: column;
+// 				padding: 10vw;
+// 				align-items: center;
+// 				.img-container{
+// 					width: 62vw; 
+// 				}
+// 				.text1, .text3{
+// 					text-align: center;
+// 					align-items: center;
+// 					padding: 0;
+// 					width: 55vw;
+// 					h3{
+// 						margin-top: 35px;
+// 					}
+// 					h4{
+// 						width: 55vw;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+@media only screen and (max-width: 990px) {
 	.projects-root{
 		max-width: 100%;
 		align-items: center;
-		hr{
-			margin-top: 10vh;
-		}
+		margin-top: 0;
+		// hr{
+		// 	margin-top: 10vh;
+		// }
 		.projects{
 			h2{
-				padding: 7vw 0;
+				padding: 5vw 0;
 			}
 			.crypto,
 			.pair{
 				flex-direction: column;
-				padding: 10vw;
+				padding: 5vw 10vw;
 				align-items: center;
-				.img{
+				.img-container{
 					width: 62vw; 
+					.img{
+						width: 100%;
+						height: 100%;
+						object-fit: contain;
+					}
 				}
 				.text1, .text3{
 					text-align: center;
@@ -169,9 +214,15 @@ $font-color: rgb(228, 231, 237);
 			.numpaz{
 				flex-direction: column-reverse;
 				padding: 10vw;
-				.img{
+				.img-container{
 					width: 65vw;
 					padding-left: 0;
+					.img{
+						padding-left: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: contain;
+					}
 				}
 				.text2{
 					text-align: center;

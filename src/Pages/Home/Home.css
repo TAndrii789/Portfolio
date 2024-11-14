@@ -48,9 +48,9 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 .content .greeting {
-  flex: 1;
   margin-left: 25vh;
 }
 .content .greeting p {
@@ -64,9 +64,6 @@ body {
 }
 .content .greeting .text {
   margin-top: 2vh;
-}
-.content .photo-container {
-  flex: 1;
 }
 .content .photo-container .photo {
   max-width: 50vh;
@@ -303,6 +300,49 @@ body {
     margin-right: 25vh;
   }
 }
+@media only screen and (max-width: 990px) {
+  .nav-bar {
+    max-width: 100%;
+  }
+  .nav-bar .inside-nav .navigation {
+    width: 60vw;
+  }
+  .nav-bar .inside-nav .navigation span {
+    width: 15vw;
+  }
+  .content {
+    margin-top: 90px;
+    flex-direction: column-reverse;
+  }
+  .content .greeting {
+    margin: 0 17vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .greeting p {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  .content .greeting h1 {
+    font-size: 2.4em;
+  }
+  .content .greeting h2 {
+    font-size: 1.5em;
+  }
+  .content .greeting .text {
+    margin-top: 2vh;
+  }
+  .content .photo-container {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .content .photo-container .photo {
+    width: 65vw;
+    margin: 2vh 0;
+  }
+}
 @media only screen and (max-width: 480px) {
   html {
     max-width: 100%;
@@ -389,9 +429,9 @@ body {
     margin-top: 2vh;
   }
   .content .photo-container {
+    object-fit: contain;
     align-items: center;
     justify-content: center;
-    margin-top: 130px;
     position: relative;
   }
   .content .photo-container .photo {

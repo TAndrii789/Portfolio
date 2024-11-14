@@ -12,7 +12,8 @@ export const Projects = () => {
 			<div className="projects">
 				<h2>Projects I've built</h2>
 				<div className="crypto">
-					<img src={cryptoPhoto} className="cryptoPhoto   img" />
+					<div className="img-container"><img src={cryptoPhoto} className="cryptoPhoto   img" /></div>
+					
 					<div className="text1">
 						<h3>CryptoCurrency</h3>
 						<h4>
@@ -64,11 +65,15 @@ export const Projects = () => {
 							</a>
 						</span>
 					</div>
+					<div className="img-container">
 					<img src={numpazPhoto} className="numpazPhoto img" />
+					</div>
 				</div>
 
 				<div className="pair">
+				<div className="img-container">
 					<img src={pairPhoto} className="pairPhoto img" />
+					</div>
 					<div className="text3">
 						<h3>Find-a-Pair</h3>
 						<h4>

@@ -129,6 +129,25 @@
 	border-radius: 50%;
 }
 
+@media only screen and (max-width: 990px) {
+	.contact-content{
+		max-width: 100%;
+		margin-bottom: 0;
+		.atom-loader{
+			width: 270px;
+			height: 270px;
+		}
+		flex-direction: column;
+		.contact-containers{
+margin-top: 70px;
+			form{
+				padding-left: 0;
+				margin-right: 0;
+				width: 55vw;
+			}
+		}
+	}
+}
 
 @media only screen and (max-width: 480px) {
 	.contact-content{
@@ -144,7 +163,8 @@
 			form{
 				padding-left: 0;
 				margin-right: 0;
-				width: 270px;
+				width: 55vw;
+				min-width: 220px;
 			}
 		}
 	}

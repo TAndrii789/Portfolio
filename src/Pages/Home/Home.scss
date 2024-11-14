@@ -51,8 +51,9 @@ body {
 	height: 100vh;
 	align-items: center;
 	justify-content: center;
+	flex-direction: row;
 	.greeting {
-		flex: 1;
+		// flex: 1;
 		margin-left: 25vh;
 		p {
 			font-size: 1.2em;
@@ -68,7 +69,7 @@ body {
 		}
 	}
 	.photo-container {
-		flex: 1;
+		// flex: 1;
 		.photo {
 			max-width: 50vh;
 			border-radius: 50%;
@@ -319,6 +320,55 @@ body {
 		margin-right: 25vh;
 	}
 }
+@media only screen and (max-width: 990px) {
+
+			.nav-bar {
+				max-width: 100%;
+				.inside-nav {
+					.navigation  {
+				width: 60vw;
+				span{
+					width: 15vw;
+				}
+					}
+				}
+			}
+
+		.content {
+			// max-width: 100%;
+			margin-top: 90px;
+			flex-direction: column-reverse;
+			.greeting {
+				margin: 0 17vw;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+					p {
+						font-size: 1.2em;
+						font-weight: 500;
+					}
+					h1 {
+						font-size: 2.4em;
+					}
+					h2 {
+						font-size: 1.5em;
+					}
+					.text {
+						margin-top: 2vh;
+					}
+			}
+			.photo-container {
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				.photo {
+					width: 65vw;
+					margin: 2vh 0;
+				}
+			}
+		}
+	}
+
 @media only screen and (max-width: 480px) {
 	html {
 		max-width: 100%;
@@ -412,9 +462,9 @@ body {
 				}
 		}
 		.photo-container {
+			object-fit: contain;
 			align-items: center;
 			justify-content: center;
-			margin-top: 130px;
 			position: relative;
 			.photo {
 				width: 65vw;
